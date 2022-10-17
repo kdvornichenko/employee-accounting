@@ -1,0 +1,26 @@
+.Employee
+	@apply flex justify-between p-6 text-lg text-black leading-none bg-white border-t
+	&:first-child
+		@apply border-t-0
+	&Name
+		@apply w-3/4 flex items-center cursor-pointer
+	&Salary
+		@apply w-full max-w-xs text-center outline-blue-200 px-2 py-1
+		/* Chrome, Safari, Edge, Opera */
+		&::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+			-webkit-appearance: none
+			/* Firefox */
+		&[type=number]
+			-moz-appearance: textfield
+	&Btns
+		@apply flex items-center gap-2
+		&Cookie
+			@apply p-1.5 text-orange-300 bg-gray-100 rounded
+		&Trash
+			@apply p-1.5 text-red-500 bg-gray-100 rounded
+		&Star
+			@apply text-yellow-200 opacity-0
+.increase
+	@apply text-orange-300
+.provide
+	@apply opacity-100

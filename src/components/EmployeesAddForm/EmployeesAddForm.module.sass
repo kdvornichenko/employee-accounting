@@ -1,0 +1,21 @@
+.AddForm
+	@apply mt-4 flex gap-3
+	&Wrap
+		@apply bg-lightBlue text-white p-6 mt-6 shadow-mainShadow rounded-md
+	&Title
+		@apply text-lg
+	&Name
+		@apply py-1 px-2 rounded outline-none text-black
+		&::placeholder
+			@apply pl-0.5
+	&Salary
+		@apply py-1 px-2 rounded outline-none text-black
+		&::placeholder
+			@apply pl-0.5
+		&::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+			-webkit-appearance: none
+			/* Firefox */
+		&[type=number]
+			-moz-appearance: textfield
+	&Btn
+		@apply px-2 py-1.5 bg-transparent border rounded hover:bg-blue-100 hover:text-gray-800 transition-all
